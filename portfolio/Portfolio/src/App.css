@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "streamster";
+  src: url(./Fonts/GoodDreamsDemoRegular.ttf);
+}
+
+@font-face {
+  font-family: "bega";
+  src: url(./Fonts/bega/Bega-Bold-BF63c8a6bb34694.otf);
+}
+
+
+.main{
+ 
+}
+
+.NavBar{
+  display: flex;
+  height: 7vh;
+  background-color: rgb(36, 33, 26);
+  
+}
+
+
+
+.navList{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: slideTop ease 1s forwards;
+  
+}
+
+
+.link{
+  font-family: 'Bebas Neue', cursive;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+.introduction{
+  height: 93vh;
+  background-color: rgb(36, 33, 26);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  margin-left: -10vw;
+ 
+}
+
+#descript{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  height: 500px;
+  margin-top: 80px;
+  animation: slideLeft ease 1s forwards;
+}
+
+.helloTag{
+  color: #e5e4e9 ;
+ 
+
+}
+
+.nameTag{
+  color:#ec48a8 ;
+  text-shadow: 0 0 50px #ce539b ;
+  font-size: 55px;
+  
+}
+
+
+.decorationImageDiv{
+  background-color: rgb(36, 33, 26);
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 20%;
+  transform: rotate(90deg);
+  
+  
+}
+.imageDiv{
+  width: 18vw;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgb(248, 248, 250);
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meImage{
+  width: 20vw;
+}
+
+.freudContainer{
+  
+  height: 600px;
+  animation: slideRigth ease 1s forwards;
+
+}
+
+@keyframes slideRigth{
+  0% {
+    transform: translateX(-200px) ;
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop{
+  0% {
+    transform: translateY(-200px) ;
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideTopH3{
+  0% {
+    transform: translateY(-100px) ;
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slideLeft{
+  0% {
+    transform: translateX(200px) ;
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+.freudContainer span{
+  top: 10px;
+  color: #ce539b;
+  
+  font-family: streamster;
+  
+}
+
+
+
+
+.introDescription{
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vw;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  height: 400px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 6vw;
+  width: 90vw;
+  margin-top: -180px;
+  
+  
+}
+
+
+
+.introDescription h3{
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0px;
+  color:#e5e4e9;
+  animation: slideTopH3 ease 1s forwards
+  
+
+}
+
+.professionTag{
+ color:rgb(36, 33, 26);
+ 
+ position: relative;
+}
+
+.professionTag::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 0;
+  height: 100%;
+  
+  color:#ec48a8 ;
+  
+  border-right: 2px solid #ec48a8;
+  overflow: hidden;
+  animation: animate 6s linear infinite ;
+  
+}
+@keyframes animate {
+  0%,10%,100%
+  {
+    width: 0%;
+  }
+   10%,30%, 50%,70%,90%
+ {
+     width: 100%;
+ }
+}
+.contactList{
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style-type:none;
+  width: 30vw;
+  margin-left: -35px;
+  margin-top: 150px;
+ 
+}
+
+.contactList li{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(169, 69, 252) 0%, rgb(66, 136, 211) 100%);;
+  border-radius: 5%;
+  padding: 4px;
+ 
+ 
+
+
+}
+
+.aboutMe{
+  height: 100vh;
+  background-color: rgb(36, 33, 26);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+.technologies{
+  width: 30vw;
+  height: 80vh;
+  background-color: rgb(36, 33, 26);
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  align-items: center;
+  color:#e5e4e9;
+  margin-top: 90px;
+  
+}
+
+.infoAbout{
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  justify-content: space-evenly;
+
+}
+
+.aboutTitle{
+  font-family: 'Montserrat', sans-serif;
+  color:#fdfcfd;
+  text-shadow: 0 0 10px #ce539b, 0 0 30px #ce539b,0 0 30px #ce539b, 0 0 80px #2dd8c1;
+  font-size: 3vw;
+  margin-top: -120px;
+
+  
+}
+
+.text{
+  color: #fcfcfd;
+  text-shadow: 0 0 20px rgb(4, 4, 4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+}
+
+.mePhoto{
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  
+}
+
+.photo{
+  width: 30vw;
+  border-radius: 58% 42% 57% 43% / 23% 77% 23% 77%  ;
+}
+
+.techTitle{
+ 
+  text-shadow:  0 0 1110px #2dd8c1;
+  margin-top: -140px;
+  font-family: 'Montserrat', sans-serif;
+  color:#e5e4e9;
+  border-bottom: 2px solid #2dd8c1;
+  
+  font-size: 3vw;
+  letter-spacing: 3px;
+  
+ 
+  
+}
+
+.techIcons{
+  display: flex;
+  justify-content:space-evenly;
+ flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -200px;
+ 
+  
+}
+
+.techIcon{
+  border: 3px solid #2dd8c1;
+  margin:10px;
+  background-color: #e5e4e9;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  margin-top: 40px;
+  
+  
+  
+}
+.techIcon:hover{
+  
+  box-shadow:0 0 25px #2dd8c1;
+    text-shadow: 0 0 25px #2dd8c1;
+  transition: 0.5s;
+}
+
+
+.projects{
+  
+  height: 100vh;
+  background-color: rgb(36, 33, 26);
+  align-items: center;
+}
+
+.projects h3{
+  text-align: center;
+  font-size: 35px;
+  color: rgb(253, 253, 252);
+  
+  height: 60px;
+  margin-top: 5px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 15px;
+  
+ 
+  
+  
+  
+}
+.h3{display: flex;
+  width: 99vw; text-align: center;
+  font-size: 35px;
+  color: rgb(253, 253, 252);
+  border-bottom: 5px solid #ec48a8;
+  border-top: 5px solid #ec48a8;
+  height: 60px;
+  background-color: rgb(36, 33, 26);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 15px;
+  justify-content: center;
+  
+  
+  ;} 
+
+@media (max-width: 768px){
+  .NavBar{
+    display: none;
+  }
+  
+  }
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(254, 253, 253, 0.972);
+  --animation-color: #ec48a8;
+  --fs-size: 2em;
+  letter-spacing: 5px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  text-shadow: 0 0 25px #2dd8c1;
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color) ;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+  text-shadow: 0 0 25px rgb(36, 33, 26) ;
+    
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+  
+}

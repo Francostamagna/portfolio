@@ -1,0 +1,33 @@
+.video{
+    margin-top: -50px;
+}
+
+.video div {
+    height: 10vh;
+}
+.rh5v-DefaultPlayer_video{
+    margin-top: 80px;
+    height: 50vh;
+    border-radius: 62% 38% 31% 69% / 28% 50% 50% 72% ;
+    box-shadow: 0 0 35px #ce539b, 0 0 30px #ce539b,0 0 30px #ce539b, 0 0 80px #2dd8c1;
+
+
+    
+}
+
+.rh5v-PlayPause_button{
+    display: none;
+} 
+.rh5v-Time_component {
+    display: none;
+}
+.rh5v-Volume_component {
+    display: none;
+}
+
+.rh5v-Fullscreen_component{
+    display: none;
+} 
+
+.rh5v-Seek_track{   display: none;
+}
