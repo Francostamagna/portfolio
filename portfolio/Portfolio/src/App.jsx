@@ -8,6 +8,7 @@ import Slider from './Slider';
 import Swiper from './swiper';
 import Video from './video';
 import Icons from './Icons';
+import Typed from 'react-typed';
 
 
 
@@ -67,7 +68,17 @@ function App() {
            
            
           
-          <h3 ><span>I am a </span> <span data-text="Full Stack Developer & Psychologist" className='professionTag'>Full Stack Developer & Psychologist</span></h3>
+          <h3 className='professionTag'><span>I am a </span><Typed className='typed'
+                strings={[
+                    'Full Stack Developer',
+                    'Psychologist',
+                    ]}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    
+                    loop >
+                   
+                </Typed> </h3>
           
           <Icons></Icons>
           </div>

@@ -200,19 +200,10 @@
  position: relative;
 }
 
-.professionTag::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left:0;
-  width: 0;
-  height: 100%;
-  
-  color:#ec48a8 ;
-  
-  border-right: 2px solid #ec48a8;
-  overflow: hidden;
-  animation: animate 6s linear infinite ;
+.typed{
+  color: #2dd8c1;
+  text-shadow: 0 0 20px #2dd8c1;
+ 
   
 }
 @keyframes animate {

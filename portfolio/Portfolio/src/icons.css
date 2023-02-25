@@ -64,7 +64,7 @@
 
 .download{
     --width: 500px;
-    --height: 45px;
+    --height: 48px;
    
     
     --button-color:  #d1cdcd;;
@@ -139,6 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   
   .download:hover {
