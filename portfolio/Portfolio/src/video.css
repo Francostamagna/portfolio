@@ -1,13 +1,14 @@
 .video{
     margin-top: -50px;
+    height: 600px;
 }
 
 .video div {
-    height: 10vh;
+    height: 600px;
 }
 .rh5v-DefaultPlayer_video{
     margin-top: 80px;
-    height: 50vh;
+    height: 450px;
     border-radius: 62% 38% 31% 69% / 28% 50% 50% 72% ;
     box-shadow: 0 0 35px #ce539b, 0 0 30px #ce539b,0 0 30px #ce539b, 0 0 80px #2dd8c1;
 
@@ -31,3 +32,21 @@
 
 .rh5v-Seek_track{   display: none;
 }
+
+.rh5v-DefaultPlayer_seek{
+    display: none;
+}
+
+.rh5v-DefaultPlayer_controls{
+    display: none;
+}
+
+@media (max-width: 980px){
+   .video{
+    
+   
+   }
+    .rh5v-DefaultPlayer_video{
+        height: 400px;
+    }
+    }

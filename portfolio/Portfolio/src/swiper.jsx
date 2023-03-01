@@ -48,16 +48,43 @@ export default () => {
         <div className='detailContainer'>
             <h4 className='info'>{item.info}</h4>
             <div className='deployRepo'>
-              <a className='deployIcon' key={i} href={item.deploy} target="_blank" rel="noreferrer"> <img src={deploy} alt="deploy" width="150" height="150"/> </a>   
-              <a className='deployIcon' key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" width="60" height="60"/> </a>    
+              {item.deploy? <a className='deployIcon' key={i} href={item.deploy? item.deploy: null} target="_blank" rel="noreferrer"> <img src={deploy} classname="deployGit" alt="deploy" width="150" height="150"/> </a>: null   }
+              {item.deploy? <a  className='deployIcon' key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" width="60" height="60"/> </a> : <a   key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" className='deployIcondown' width="60" height="60"/> </a> }
+                
                    </div>
             <div className='logos'>{item.tech && item.tech.map((tech,i) =>(
-            <a  key={i} href={tech.href} target="_blank" rel="noreferrer" > <img src={tech.src} alt={tech.alt} width="50" height="50"/> </a>
+            <a  key={i} href={tech.href} target="_blank" rel="noreferrer" > <img src={tech.src} alt={tech.alt} /> </a>
         ))}</div>
             
         </div>
         {item.image.map((item, i) => {
+         
+         if (item.name == "zoa"){
           const indexLeft = mod(index - 1, 3);
+          const indexRight = mod(index + 1, 3);
+          let classname = "";
+
+          if (i === index){
+            classname= "cardzoa cardzoa--activezoa"
+          }
+          else if (i=== indexLeft){
+            classname="cardzoa cardzoa--leftzoa"
+          }
+          else if( i === indexRight){
+            classname=" cardzoa cardzoa--rightzoa"
+          }
+          else{
+            classname= "cardzoa"
+          }
+          
+          return <img key={item.key}
+           src={item.image} 
+           alt="slider" 
+           className={classname}/>
+         }
+         else{
+         
+         const indexLeft = mod(index - 1, 3);
           const indexRight = mod(index + 1, 3);
           let classname = "";
 
@@ -78,7 +105,8 @@ export default () => {
            src={item.image} 
            alt="slider" 
            className={classname}/>
-        })}
+}})}
+       
        
      
     </div>

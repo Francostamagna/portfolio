@@ -68,7 +68,7 @@ function App() {
            
            
           
-          <h3 className='professionTag'><span>I am a </span><Typed className='typed'
+          <h3 className='professionTag'><span className='tag'>I am a </span><Typed className='typed'
                 strings={[
                     'Full Stack Developer',
                     'Psychologist',
@@ -87,21 +87,22 @@ function App() {
         
         </section>
       <section className='aboutMe' ref={aboutMe}>
-        
+        <div className='partContainer'>
         <div className='infoAbout'>
         <h2 className='aboutTitle'>Problem-solver. Team-player.  Creative. </h2>
-          <div className='text'>
+          <h3 className='text'>
             I am a Full Stack Developer from Cordoba, Argentina. I am also a Psychologyst,
             started programming in 2022. I love fishing and team sports. Music lover. Empathy.
             I am also a Clinical Psychologist, profession that I carry out in the present, it
 has allowed me to develop comunicational soft skills, active listening and a
 better understanding of interrelationships inside groups.
-</div>
+</h3>
             
         </div>
         <div className='mePhoto'>
           <img className='photo' src={me} alt='not found'></img>
         </div>
+  </div>   
         <div className='technologies'>
         <p className='techTitle'>TECHNOLOGIES</p>
         <p className='techIcons'> {tech && tech.map((t,i) => (<a className='techIcon' href={t.href} target="_blank" rel="noreferrer"> <img src={t.src} alt={t.alt} width="50" height="50"/> </a>) )}

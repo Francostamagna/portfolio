@@ -4,6 +4,9 @@ import image3 from "../assets/3.png"
 import image11 from "../assets/pcideal1.png"
 import image12 from "../assets/pcideal2.png"
 import image13 from "../assets/pcideal3.png"
+import image21 from "../assets/zoa1.jpg"
+import image22 from "../assets/zoa2.jpg"
+import image23 from "../assets/zoa3.jpg"
 import logo from "../assets/logo.png"
 import three from "../assets/Threejs-logo.svg"
 import mercado from "../assets/mercado.png"
@@ -123,14 +126,14 @@ export const data = [
      title: "Ar ZOA",
      key:"3",
      image:[{id:1,
-        image:image1},
+        image:image21, name:"zoa"},
         {id:2,
-           image:image2},
+           image:image22, name:"zoa" },
            {id:3,
-               image:image3} ],
+               image:image23, name:"zoa"} ],
      info:" Augmented Reality FaceApp developed to generate proximity between the product and the buyer. In this App, the potential buyers can try the product (head accesories) before buying it.",
-     repo: "repo",
-     deploy: "deploy",
+     repo: "https://github.com/Francostamagna/ZoaAr",
+    
      tech: [{href:"https://www.w3.org/html/",
      src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
       alt:"html5"},
