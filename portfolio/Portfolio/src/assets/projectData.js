@@ -25,6 +25,7 @@ export const data = [
      ,
      
      repo: "https://github.com/Francostamagna/vite",
+     repoClass: "deployIconGit",
     deploy: "https://vite-dun-xi.vercel.app/",
     tech: [{href:"https://www.w3.org/html/",
     src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
@@ -74,6 +75,7 @@ export const data = [
      info:"Market Place of PC components; It has features that allow the user with computer knowledge to purchase and compare products from various vendors, as well as facilities for those who want to build their PC but do not have such knowledge"
      ,
      repo: "https://github.com/Nanomarquez/tupcideal",
+     repoClass: "deployIconGit",
      deploy: "https://tupcideal.vercel.app/",
      tech: [{href:"https://www.w3.org/html/",
       src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
@@ -133,7 +135,7 @@ export const data = [
                image:image23, name:"zoa"} ],
      info:" Augmented Reality FaceApp developed to generate proximity between the product and the buyer. In this App, the potential buyers can try the product (head accesories) before buying it.",
      repo: "https://github.com/Francostamagna/ZoaAr",
-    
+     repoClass: "deployIconGitzoa",
      tech: [{href:"https://www.w3.org/html/",
      src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
       alt:"html5"},
