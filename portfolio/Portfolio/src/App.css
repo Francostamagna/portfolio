@@ -599,7 +599,7 @@
 
   .formContact input, form textarea{
     width: 100%;
-    border: 0;
+    border:0;
     outline: none;
     background: #e5e4e9;
     padding: 15px;

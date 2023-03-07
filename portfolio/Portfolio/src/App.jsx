@@ -17,7 +17,7 @@ import Typed from 'react-typed';
 function App() {
   
   const aboutMe = useRef(null);
-  const home = useRef(null);
+  const contact = useRef(null);
   const projects = useRef(null);
 
   const scrollToSection = (sectionRef) => {
@@ -31,15 +31,12 @@ function App() {
   return (
     
     <div className="main">
-      <MobileNavBar about={aboutMe} home={home} proj={projects}  ></MobileNavBar>
+      <MobileNavBar about={aboutMe} contact={contact} proj={projects}  ></MobileNavBar>
       <section className='NavBar'>
        
     
         <ul className='navList'>
-        <button data-text="Awesome" class="button" onClick={()=>scrollToSection(home)}>
-    <span class="actual-text">&nbsp;HOME&nbsp;</span>
-    <span class="hover-text" aria-hidden="true">&nbsp;HOME&nbsp;</span>
-</button>
+       
 <button data-text="Awesome" class="button" onClick={()=>scrollToSection(aboutMe)}>
     <span class="actual-text">&nbsp;ABOUT&nbsp;</span>
     <span class="hover-text" aria-hidden="true">&nbsp;ABOUT&nbsp;</span>
@@ -48,11 +45,15 @@ function App() {
     <span class="actual-text">&nbsp;PROJECTS&nbsp;</span>
     <span class="hover-text" aria-hidden="true">&nbsp;PROJECTS&nbsp;</span>
 </button>
+<button data-text="Awesome" class="button" onClick={()=>scrollToSection(contact)}>
+    <span class="actual-text">&nbsp;CONTACT&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;CONTACT&nbsp;</span>
+</button>
        
          
         </ul>
       </section>
-      <section className='introduction'ref={home} >
+      <section className='introduction'ref={contact} >
        
         <div className='introDescription'>
         
@@ -133,7 +134,7 @@ better understanding of interrelationships inside groups.
       <Swiper></Swiper>
       </section>
 
-      <section className='contact'>
+      <section className='contact' ref={contact}>
 
       <div className='contactTitle'>
                 <h3>CONTACT ME</h3>
