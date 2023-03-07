@@ -116,6 +116,9 @@
 
 }
 
+
+
+
 @keyframes slideRigth{
   0% {
     transform: translateX(-200px) ;
@@ -255,6 +258,127 @@
 
 }
 
+#downCv{
+  margin-top: 70px;
+  font-size: 25px;
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  
+  align-items: flex-end;
+  
+  
+}
+
+.download{
+  --width: 200px;
+  --height: 35px;
+ 
+  
+  --button-color:  #d1cdcd;;
+  
+  width: 200px;
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: bebas neue;
+  transition: background 0.3s;
+}
+
+.download::before {
+  position: absolute;
+ 
+
+  font-size: 1rem;
+  
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.download::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.download::after,.download::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.buttonText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.download-container,.buttonText,.cvIcon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  
+  color: black;
+}
+
+.buttonText {
+  top: 0
+}
+
+.buttonText,.cvIcon {
+  transition: top 0.5s;
+}
+
+.cvIcon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.download:hover {
+  color: #d1cdcd;
+  background-color: #ec48a8;
+  
+  box-shadow:0 0 25px #2dd8c1;
+  text-shadow: 0 0 25px #2dd8c1;
+}
+
+.download:hover .buttonText {
+  top: -100%;
+}
+
+.download:hover .cvIcon{
+  top: 0;
+}
+
+.download:hover:before,.download:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.download:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.download:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
 .aboutMe{
   height: 900px;
   background-color: rgb(36, 33, 26);
@@ -299,7 +423,7 @@
 .aboutTitle{
   font-family: 'Montserrat', sans-serif;
   color:#fdfcfd;
-  text-shadow: 0 0 10px #ce539b, 0 0 30px #ce539b,0 0 30px #ce539b, 0 0 80px #2dd8c1;
+  text-shadow: 0 0 10px #ce539b, 0 0 20px #ce539b,0 0 20px #ce539b, 0 0 50px #2dd8c1;
   font-size: 3vw;
   
 
@@ -377,7 +501,7 @@
 
 .projects{
   
-  height: 100vh;
+  height: 800px;
   background-color: rgb(36, 33, 26);
   align-items: center;
 }
@@ -411,6 +535,112 @@
   
   
   ;} 
+
+  .contact{
+    height:1100px;
+    background-color: rgb(36, 33, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+  
+   
+  }
+  
+  .contactTitle{
+    display: flex;
+     text-align: center;
+    font-size: 35px;
+    color: rgb(253, 253, 252);
+    border-bottom: 5px solid #ec48a8;
+    border-top: 5px solid #ec48a8;
+    height: 60px;
+    background-color: rgb(36, 33, 26);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+   
+  }
+
+  .contactContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contactRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-end;
+  }
+
+
+  .contactRight{
+    display: flex;
+    max-width: 700px;
+    height: 500px;
+  
+  }
+
+  .contactRight form{
+    width: 100%;
+  }
+
+  .contactLeft{
+    flex-basis: 60%;
+
+  }
+
+  .formContact input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #e5e4e9;
+    padding: 15px;
+    margin: 15px;
+    color: #ce539b;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 15px #2dd8c1;
+  }
+
+  .formContact textarea{
+    margin-bottom: 80px;
+    height: 200px;
+    
+  }
+
+  .formContact{height: 400px;
+  }
+
+
+  .formContact button{
+    height: 50px;
+    width: 120px;
+    margin-left: 15px;
+    font-family:  'Bebas Neue', cursive;
+    font-size: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ;
+    
+  }
+
+  .formContact button:hover{
+    color: #e5e4e9;
+    background-color:  rgb(36, 33, 26);
+    transform: scale(0.95);
+    text-shadow:0 0 15px #e5e4e9 ;
+    box-shadow:0 0 10px #2dd8c1;
+   
+  }
+ 
+
 
 @media (max-width: 980px){
   .NavBar{
@@ -465,6 +695,11 @@
   filter: drop-shadow(0 0 23px var(--animation-color));
   
 }
+
+
+
+
+
 
 @media (max-width: 980px){
   .introDescription{
@@ -550,9 +785,10 @@
 
    .text{
     margin-top: 45px;
+    width: 70vw;
    }
    .technologies{
-    width: 96vw;
+    width: 95vw;
     margin-top: 200px;
    }
 
@@ -629,4 +865,67 @@
   .typed{
     margin-top: 20px;
   }
+  }
+
+  @media (max-width:470px){
+    .professionTag span{
+      font-size: 7vw ;
+      margin-left: -3px;
+      
+    }
+    .helloTag span{
+      font-size: 11vw;
+      
+    }
+    .helloTag {
+      font-size: 9vw;
+    }
+    #descript{
+      margin-left: 0px;
+      margin-right: -20px;
+    }
+
+    .techIcon{
+      width: 50px;
+      height: 50px;
+    }
+    .redes{
+      margin-right: -35px;
+    }
+    .download{
+      font-size: 20px;
+      width: 120px;
+      
+
+    }
+   
+
+  }
+
+  @media (max-width:370px){
+   .redes a{
+    left: 5px;
+   }
+
+   .aboutTitle{
+    min-width: 300px;
+    font-size: 36px;
+
+   }
+   .text{
+    min-width: 300px;
+    margin-right: 20px;
+   }
+
+   .photo{
+    min-width: 310px;
+    margin-left: 10px;
+   }
+  }
+
+  @media (max-width:397px){
+
+    #descript{
+      margin-top: 40px;
+    }
   }

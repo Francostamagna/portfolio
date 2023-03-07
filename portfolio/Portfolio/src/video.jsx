@@ -6,7 +6,7 @@ import "../src/video.css"
 export default function video() {
   return (
     <div className='video'>
-    <Video autoPlay:true>
+    <Video autoPlay >
    <source src={freud} type="video/webm"></source>
     </Video>
     </div>

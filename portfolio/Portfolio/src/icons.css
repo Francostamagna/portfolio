@@ -3,7 +3,8 @@
     text-align: center;
     justify-content: center;
     margin-top: 150px;
-    margin-left: ;
+    flex-direction: column;
+    
 }
 
 .redes a{
@@ -61,121 +62,7 @@
 
 
 
-#downCv{
-    width: 200px;
-    font-size: 30px;
-    border-radius: none;
-    
-}
 
-.download{
-    --width: 500px;
-    --height: 48px;
-   
-    
-    --button-color:  #d1cdcd;;
-    
-    width: 500px;
-    height: var(--height);
-    background: var(--button-color);
-    position: relative;
-    text-align: center;
-    border-radius: 0.45em;
-    font-family: bebas neue;
-    transition: background 0.3s;
-  }
-  
-  .download::before {
-    position: absolute;
-   
-  
-    font-size: 1rem;
-    
-    border-radius: .25em;
-    line-height: var(--tooltip-height);
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-    left: calc(50% - var(--tooltip-width) / 2);
-  }
-  
-  .download::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    
-    left: calc(50% - 10px);
-    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-  }
-  
-  .download::after,.download::before {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-  }
-  
-  .buttonText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-  }
-  
-  .download-container,.buttonText,.cvIcon {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    
-    color: black;
-  }
-  
-  .buttonText {
-    top: 0
-  }
-  
-  .buttonText,.cvIcon {
-    transition: top 0.5s;
-  }
-  
-  .cvIcon {
-    color: #fff;
-    top: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .download:hover {
-    color: #d1cdcd;
-    background-color: #ec48a8;
-    
-    box-shadow:0 0 25px #2dd8c1;
-    text-shadow: 0 0 25px #2dd8c1;
-  }
-  
-  .download:hover .buttonText {
-    top: -100%;
-  }
-  
-  .download:hover .cvIcon{
-    top: 0;
-  }
-  
-  .download:hover:before,.download:hover:after {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .download:hover:after {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-  }
-  
-  .download:hover:before {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-  }
 
   @media (max-width: 980px){
 
@@ -196,7 +83,16 @@
       height: 10vw;
       width: 10vw;}
 
-    #downCv{
-      width: 35vw;
-      font-size: 6vw;}
+    
+    .redes{
+      width: 80vw;
+
+    }  
+  }
+
+  @media (max-width:470px){
+   .redes a{
+    margin: 0 15px 10px 0;
+   }
+    
   }

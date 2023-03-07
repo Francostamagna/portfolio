@@ -30,7 +30,7 @@ text-align:center;
 font-size: 100px;
 font-family: 'Permanent Marker', cursive;
 border-bottom: 1px solid #ffff;
-text-shadow: 0 0 50px  #2dd8c1;
+text-shadow: 0 0 40px  #2dd8c1;
 letter-spacing: 0.5vw;
 height: 180px;
 align-items: center;
@@ -47,7 +47,7 @@ font-size: 100px;
 color: rgb(254, 254, 253);
 border-bottom: 1px solid #ffff;
 height: 160px;
-text-shadow: 0 0 50px  #2dd8c1;
+text-shadow: 0 0 40px  #2dd8c1;
 align-items: center;
 justify-content: center;
 display: flex;
@@ -58,7 +58,7 @@ height: 160px;
 border-bottom: 1px solid #ffff;
 font-size: 100px;
 
-text-shadow: 0 0 50px  #2dd8c1;
+text-shadow: 0 0 40px  #2dd8c1;
 color: rgb(254, 254, 253);
 align-items: center;
 justify-content: center;
@@ -102,6 +102,8 @@ display: flex;
 .deployIconGitzoa{
     height: 60px;
     width: 60px;
+    margin-top: 30px;
+    margin-left: -1vw;
 }
 
 .logos a img{
@@ -154,7 +156,9 @@ display: flex;
     
     
 }
-
+.swiper-wrapper #swiper-wrapper-10510abf31091bda681 {
+    background-color: #2dd8c1 !important;
+}
 
 .swiper-pagination-bullet{
     width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,15px)) !important;
@@ -188,7 +192,7 @@ display: flex;
     opacity: 1;
     z-index: 99;
     transform: scale(1);
-    box-shadow: 0 0 50px #2dd8c1;
+    box-shadow: 0 0 30px #2dd8c1;
 
 }
 
@@ -197,6 +201,7 @@ transform: translate(-125%) scale(0.8);
 transition: 500ms;
 opacity: 0.3;
 box-shadow: 0 0 50px #ce539b;
+
 }
 .card--right{
     transform: translate(125%) scale(0.8);
@@ -291,6 +296,10 @@ bottom: -5px;
 .cardzoa--leftzoa{
   height: 35vw;
   width: 19vw;
+}
+
+.deployIconGitzoa{
+    margin-left: 0vw;
 }
 
 .cardzoa--rightzoa{
@@ -488,4 +497,8 @@ bottom: -5px;
 
         margin-top: 360px;
     } 
+    .swiper-slide.swiper-slide-active{
+       margin-right: 0 !important;
+    }
+   
 }
