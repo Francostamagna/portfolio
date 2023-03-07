@@ -2,15 +2,15 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 150px;
+    
     flex-direction: column;
     
 }
 
 .redes a{
     display: flex;
-    height: 60px;
-    width: 60px;
+    height:90px;
+    width: 90px;
     background-color: rgba(6, 6, 6, 0.2);
     margin: 0 30px 10px 0;
     align-items: center;
@@ -24,8 +24,8 @@
 }
 
 .redes a svg{
-  height: 50px !important;
-  width: 50px !important;
+  height: 70px !important;
+  width: 70px !important;
 }
 
 
@@ -60,6 +60,13 @@
     text-shadow: 0 0 25px #2dd8c1;
 }
 
+.mail:hover{
+  color: #d1cdcd;
+  background-color: #ec48a8;
+  
+  box-shadow:0 0 25px #2dd8c1;
+  text-shadow: 0 0 25px #2dd8c1;
+}
 
 
 

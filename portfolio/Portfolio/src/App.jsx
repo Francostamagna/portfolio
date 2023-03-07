@@ -141,8 +141,7 @@ better understanding of interrelationships inside groups.
         <div className='contactContainer'>
             <div className='contactRow'>
               <div className='contactLeft'>
-                  <h1 className='subtitle'> Contact Me</h1>
-                  <p>franco_costamagna@hotmail.com</p>
+                  
                   <Icons></Icons>
               </div>
               <div className='contactRight'>
