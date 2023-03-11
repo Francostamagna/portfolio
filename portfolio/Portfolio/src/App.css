@@ -597,7 +597,7 @@
 
   }
 
-  .formContact input, form textarea{
+  #formContact input, form textarea{
     width: 100%;
     border:0;
     outline: none;
@@ -612,17 +612,17 @@
     box-shadow: 0 0 15px #2dd8c1;
   }
 
-  .formContact textarea{
+  #formContact textarea{
     margin-bottom: 80px;
     height: 200px;
     
   }
 
-  .formContact{height: 400px;
+  #formContact{height: 400px;
   }
 
 
-  .formContact button{
+  #formContact button{
     height: 50px;
     width: 120px;
     margin-left: 15px;
@@ -634,7 +634,7 @@
     
   }
 
-  .formContact button:hover{
+  #formContact button:hover{
     color: #e5e4e9;
     background-color:  rgb(36, 33, 26);
     transform: scale(0.95);

@@ -27,6 +27,17 @@ function App() {
     })
   }
 
+  const submitFunction = (e) => {
+    const formEle = document.getElementById("formContact")
+    e.preventDefault();
+    console.log(formEle)
+    console.log("submited")
+    const formData = new FormData(formEle);
+    fetch("https://script.google.com/macros/s/AKfycbzIkF5e146JnPhSWmKzXjr5MMRHhG7Ilq9rLFOasO3wp9XdUNLv8WBcJ80uz87UROZ8/exec", {
+      method: "POST",
+      body: formData
+    })
+  } 
 
   return (
     
@@ -146,10 +157,10 @@ better understanding of interrelationships inside groups.
                   <Icons></Icons>
               </div>
               <div className='contactRight'>
-                <form className='formContact'>
-                  <input type="text" name='name' placeholder='Your name' required/>
-                  <input type="mail" name='email' placeholder='your email' required/>
-                  <textarea className='message'  cols="30" row="6"  placeholder='Your message' required/>
+                <form   id='formContact' onSubmit={(e)=>submitFunction(e)}>
+                  <input type="text" name='Name' placeholder='Your name' required/>
+                  <input type="mail" name='Email' placeholder='your email' required/>
+                  <textarea name='Message'   cols="30" row="6"  placeholder='Your message' required/>
               <button type='submit'>Submit</button>
                 </form>
 
