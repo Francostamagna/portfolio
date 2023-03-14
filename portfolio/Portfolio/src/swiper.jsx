@@ -42,14 +42,14 @@ export default () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {data && data.map((item,i) =>( <SwiperSlide key={i}>
-        <h1  key={i} className={'hache'+ item.key}>{item.title}</h1>    
-        <div key={i} className='carousel'>
+        {data && data.map((item,i) =>( <SwiperSlide key={item.name}>
+        <h1  key={item.name} className={'hache'+ item.key}>{item.title}</h1>    
+        <div key={item.name} className='carousel'>
         <div className='detailContainer'>
             <h4 className='info'>{item.info}</h4>
             <div className='deployRepo'>
-              {item.deploy? <a className='deployIcon' key={i} href={item.deploy? item.deploy: null} target="_blank" rel="noreferrer"> <img src={deploy} classname="deployGit" alt="deploy" width="150" height="150"/> </a>: null   }
-              {item.deploy? <a  className={item.repoClass} key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" width="60" height="60" /> </a> : <a   key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" className={item.repoClass} /> </a> }
+              {item.deploy? <a className='deployIcon' key={item.deploy} href={item.deploy? item.deploy: null} target="_blank" rel="noreferrer"> <img src={deploy} classname="deployGit" alt="deploy" width="150" height="150"/> </a>: null   }
+              {item.deploy? <a  className={item.repoClass} key={item.repo} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" width="60" height="60" /> </a> : <a   key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" className={item.repoClass} /> </a> }
                 
                    </div>
             <div className='logos'>{item.tech && item.tech.map((tech,i) =>(

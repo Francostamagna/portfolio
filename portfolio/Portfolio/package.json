@@ -14,13 +14,16 @@
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-three/drei": "^9.57.2",
+    "@react-three/fiber": "^8.12.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-html5video": "^2.5.1",
     "react-typed": "^1.2.0",
     "sass": "^1.58.0",
-    "swiper": "^9.0.2"
+    "swiper": "^9.0.2",
+    "three": "^0.150.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

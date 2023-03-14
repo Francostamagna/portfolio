@@ -10,6 +10,8 @@ import Swiper from './swiper';
 import Video from './video';
 import Icons from './Icons';
 import Typed from 'react-typed';
+import BallCanvas from "../src/Balls.jsx"
+import react from "../src/techIcons/reactjs.png"
 
 
 
@@ -127,9 +129,11 @@ better understanding of interrelationships inside groups.
   </div>   
         <div className='technologies'>
         <p className='techTitle'>TECHNOLOGIES</p>
-        <p className='techIcons'> {tech && tech.map((t,i) => (<a className='techIcon' href={t.href} target="_blank" rel="noreferrer"> <img src={t.src} alt={t.alt} width="50" height="50"/> </a>) )}
+        <p className='techIcons'> {tech && tech.map((t,i) => (<div className='techIcon'><BallCanvas key={i} icon={t.src}/></div>) )}
   
 </p>
+
+   
 
         </div>
         
@@ -187,3 +191,6 @@ export default App
 
 
 
+
+
+//<a className='techIcon' key={t.href} href={t.href} target="_blank" rel="noreferrer"> <img src={t.src} alt={t.alt} width="50" height="50"/> </a>

@@ -1,49 +1,51 @@
-import logo from "../assets/logo.png"
-import three from "../assets/Threejs-logo.svg"
-import mercado from "../assets/mercado.png"
+
+import three from "../techIcons/threejs.svg"
+import nodejs from "../techIcons/nodejs.png"
+import reactjs from "../techIcons/reactjs.png"
+import tailwind from "../techIcons/tailwind.png"
+import redux from "../techIcons/redux.png"
+import javascript from "../techIcons/javascript.png"
+import html from "../techIcons/html.png"
+import git from "../techIcons/git.png"
+import css from "../techIcons/css.png"
+import mercado from "../techIcons/mercado.png"
+import logo from "../techIcons/logo.png"
+import posgre from "../techIcons/posgre.png"
+import express from "../techIcons/express.png"
 
 export const tech = [{href:"https://www.w3.org/html/",
-src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+src: html,
  alt:"html5"},
   {href:"https://www.w3schools.com/css/",
-    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+    src:css,
      alt:"css3"},
   {href:"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    src:javascript,
      alt:"javascript"}, 
   {href:"https://reactjs.org/",
-    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    src:reactjs,
      alt:"react"},
   {href:"https://redux.js.org",
-  src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+  src:redux,
    alt:"redux"},
    {href:"https://nodejs.org",
-    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    src:nodejs,
      alt:"nodejs"},
    {href:"https://expressjs.com",
-    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+    src:express,
      alt:"express"},
-    {href:"https://sequelize.org",
-    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg",
-     alt:"sequelize"},
+    
     {href:"https://www.postgresql.org",
-     src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+     src:posgre,
       alt:"postgresql"},
     {href:"https://git-scm.com/",
-     src:"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+     src:git,
       alt:"git"},
-    {href:"https://firebase.google.com/",
-     src:"https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-      alt:"firebase"},
-    {href:"https://postman.com",
-     src:"https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-      alt:"postman"},
+    
     {href:"https://tailwindcss.com/",
-     src:"https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+     src:tailwind,
       alt:"tailwind"},
-    {href:"https://trello.com",
-     src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-plain-wordmark.svg",
-      alt:"trello"},
+    
       {href:"https://https://www.mercadopago.com.ar/home",
       src: mercado,
        alt:"mercado"}, 
@@ -56,3 +58,19 @@ src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5
             alt:"threejs"}
    ] 
 
+
+
+   /*{href:"https://firebase.google.com/",
+   src:"https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+   alt:"firebase"},
+ {href:"https://postman.com",
+  src:"https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+   alt:"postman"},
+   {href:"https://trello.com",
+     src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-plain-wordmark.svg",
+      alt:"trello"},
+   {href:"https://sequelize.org",
+    src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg",
+     alt:"sequelize"},
+   
+   */
