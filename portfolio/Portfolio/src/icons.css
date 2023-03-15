@@ -1,12 +1,16 @@
 .redes{
     display: flex;
     text-align: center;
-    justify-content: flex-end;
- 
-    flex-direction: column;
+    justify-content: center;
+ height: 250px;
+ width: 300px;
+    flex-direction: row;
     box-shadow: 0 0 35px #2dd8c1  ;
     border-radius: 6px;
-    align-items:end;
+   flex-wrap: wrap;
+   margin-right: 50px;
+   border-radius: 82px 16px 100px 12px; 
+   
     
 }
 

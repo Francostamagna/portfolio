@@ -11,7 +11,8 @@ import Video from './video';
 import Icons from './Icons';
 import Typed from 'react-typed';
 import BallCanvas from "../src/Balls.jsx"
-import react from "../src/techIcons/reactjs.png"
+import Starcanvas from './Stars';
+import { motion } from "framer-motion";
 
 
 
@@ -129,7 +130,7 @@ better understanding of interrelationships inside groups.
   </div>   
         <div className='technologies'>
         <p className='techTitle'>TECHNOLOGIES</p>
-        <p className='techIcons'> {tech && tech.map((t,i) => (<div className='techIcon'><BallCanvas key={i} icon={t.src}/></div>) )}
+        <p className='techIcons'> {tech && tech.map((t,i) => (<div className='techIcon'><BallCanvas key={t.name} icon={t.src}/></div>) )}
   
 </p>
 
@@ -148,16 +149,15 @@ better understanding of interrelationships inside groups.
       
       <Swiper></Swiper>
       </section>
-
+     
       <section className='contact' ref={contact}>
-
-      <div className='contactTitle'>
-                <h3>CONTACT ME</h3>
-            </div>
+       <Starcanvas></Starcanvas>
+        
         <div className='contactContainer'>
             <div className='contactRow'>
               <div className='contactLeft'>
-                  
+                  <h1 className='contactTitle'>Every good thing in life starts with a conversation</h1>
+                
                   <Icons></Icons>
               </div>
               <div className='contactRight'>
@@ -167,7 +167,7 @@ better understanding of interrelationships inside groups.
                   <textarea name='Message'   cols="30" row="6"  placeholder='Your message' required/>
               <button type='submit'>Submit</button>
                 </form>
-
+             
 
               </div>
               
@@ -179,10 +179,10 @@ better understanding of interrelationships inside groups.
 
 
 
-
+        
 
       </section>
-     
+      
     </div>
   )
 }
