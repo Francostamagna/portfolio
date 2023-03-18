@@ -713,44 +713,6 @@
 
 
 
-@media (max-width: 980px){
-  .introDescription{
-    flex-direction: column;
-    margin-top: 250px;
-    justify-content: center;
-    align-items: center;
-  }
-  .freudContainer{
-    display: flex;
-    margin-left: 10vw;
-    flex-direction: column;
-    
-  }
-  .aboutMe{
-    margin-top: 250px;
-  }
-  #descript{
-    margin-top: 20px ;
-  }
-  
-  .projects{
-    height: 1300px;
-    
-  }
-  
-  
-
-  .redes{
-    margin-top: 50px;
-  }
-   
-
-  .partContainer{
-    flex-direction: row-reverse;}
-  
-  
-  
-  }
 
   @media (max-width: 1146px){
 
@@ -779,6 +741,90 @@
     }
 
   }
+  @media (max-width: 980px){
+    .introDescription{
+      flex-direction: column;
+      margin-top: 250px;
+      justify-content: center;
+      align-items: center;
+    }
+    .freudContainer{
+      display: flex;
+      margin-left: 10vw;
+      flex-direction: column;
+      
+    }
+    .aboutMe{
+      margin-top: 250px;
+    }
+    #descript{
+      margin-top: 20px ;
+    }
+    
+    .projects{
+      height: 1300px;
+      
+    }
+    
+    
+  
+    .redes{
+      margin-top: 50px;
+    }
+     
+  
+    .partContainer{
+      flex-direction: row-reverse;}
+    
+      .contactRow{
+        flex-direction: column;
+        height: auto;
+      }
+
+      .contact{
+        height: 1000px !important;
+        
+        
+      }
+     
+
+      #canvasGeneral div div canvas{
+        height: 1000px !important;
+      }
+      #canvasGeneral div div {
+        height: 1000px !important;
+      }
+      #canvasGeneral div  {
+        height: 1000px !important;
+      }
+      #canvasGeneral{
+        height: 1000px !important;
+      }
+      .contactLeft{
+        width: 40vw;
+        
+      }
+      .contactRight{
+        width: 65vw !important;
+        padding-left: 12vw !important;
+       
+        margin-left: -18vw !important;
+        margin-top: 50px;
+       
+       
+      }
+      .contactTitle {
+       margin-bottom: 0;
+      
+      
+      
+      }
+      #formContact button{
+        margin-left: 28vw ;
+      }
+    
+    }
+  
 
   @media (max-width: 859px){
   
@@ -857,11 +903,23 @@
   
 }
   
-
-
+.contactTitle {
+  margin-bottom: 0;
+  font-size: 50px;
+ 
+ 
+ 
+ }
+ .contactRight{
+  width: 65vw !important;
+  padding-left: 1vw !important;
+ 
+  margin-left: -18vw !important;
+  margin-top: 50px;
+ 
 
   }
-
+  }
   @media (max-width: 1268px){
   .helloTag{
     flex-direction: column;
@@ -872,6 +930,16 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
+  }
+  .contactLeft{
+    width: 40vw
+  }
+  .contactRight{
+    width: 40vw ;
+    padding-left: 30px;
+  }
+  .contactTitle{
+    font-size: 3.5vw;
   }
 
   .typed{
@@ -908,7 +976,23 @@
       font-size: 20px;
       width: 120px;
       
-
+  
+    }
+    .contactTitle{
+      width: 80vw !important;
+      font-size: 5.5vw !important;
+    }
+    .contactRight{
+      width: 65vw !important;
+      padding-left: 0 !important;
+     
+      margin-left: -18vw !important;
+      margin-top: 50px;
+     
+     
+    }
+    #formContact button{
+      margin-left: 23vw ;
     }
    
 

@@ -16,10 +16,10 @@
 
 .redes a{
     display: flex;
-    height:90px;
-    width: 90px;
+    height:100px;
+    width: 100px;
     background-color: rgba(6, 6, 6, 0.2);
-    margin: 20px ;
+    margin: 8px ;
     align-items: center;
     line-height: 40px;
     text-align: center;
@@ -31,8 +31,8 @@
 }
 
 .redes a svg{
-  height: 70px !important;
-  width: 70px !important;
+  height:60px !important;
+  width: 60px  !important;
 }
 
 
@@ -82,10 +82,33 @@
 
   .redes{
     margin-top: 80px;
+    width: 75vw;
+    height: 10vw;
+    margin-left: 5vw;
+    justify-content: space-evenly; 
+    border-radius: 20px 20px 82px 82px; 
   }
+  .redes a{
+    margin-top: 0vw; 
+    
+    height: 10vw;
+    width: 10vw;}
+   
+    .redes a svg{
+      height: 8vw ;
+      width: 8vw ;
+    }
 
+   .contactTitle{
+    width: 80vw;
+    font-size: 5vw;
+    justify-content: center;
+   
+   }
 
   }
+  
+
   
   @media (max-width: 613px){
     .redes a svg{
@@ -94,19 +117,31 @@
     }
     .redes a{
       
-      height: 10vw;
-      width: 10vw;}
+      height: 9vw !important;
+      width: 9vw !important;}
 
     
     .redes{
       width: 80vw;
 
     }  
+    .contactTitle{
+      font-size: 7vw;
+      justify-content: center;
+     
+     }
   }
 
   @media (max-width:470px){
    .redes a{
     margin: 0 15px 10px 0;
    }
+   .redes a svg {
+    height: 9vw !important ;
+    width: 9vw  !important;
+  }
+  .redes a{
     
+    height: 10vw !important;
+    width: 10vw !important;}
   }
