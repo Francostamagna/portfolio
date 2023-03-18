@@ -385,6 +385,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .partContainer{
@@ -760,7 +761,10 @@
     #descript{
       margin-top: 20px ;
     }
-    
+    .techIcon{
+      height: 80px;
+      width: 80px;
+    }
     .projects{
       height: 1300px;
       
@@ -773,9 +777,7 @@
     }
      
   
-    .partContainer{
-      flex-direction: row-reverse;}
-    
+   
       .contactRow{
         flex-direction: column;
         height: auto;
@@ -966,8 +968,8 @@
     }
 
     .techIcon{
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
     }
     .redes{
       margin-right: -35px;

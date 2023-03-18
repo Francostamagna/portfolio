@@ -10,8 +10,12 @@ import git from "../techIcons/git.png"
 import css from "../techIcons/css.png"
 import mercado from "../techIcons/mercado.png"
 import logo from "../techIcons/logo.png"
-import posgre from "../techIcons/posgre.png"
+import posgre from "../techIcons/postgres.png"
 import express from "../techIcons/express.png"
+import sequelize from "../techIcons/sequelize.png"
+import trello from "../techIcons/trello.png"
+import firebase from "../techIcons/firebase.png"
+import photo from "../techIcons/photo.png"
 
 export const tech = [{href:"https://www.w3.org/html/",
 src: html,
@@ -49,13 +53,23 @@ src: html,
       {href:"https://https://www.mercadopago.com.ar/home",
       src: mercado,
        alt:"mercado"}, 
+
+       {href:"https://firebase.google.com/",
+       src: firebase,
+        alt:"firebase"},   
       
           {href:"https://hiukim.github.io/mind-ar-js-doc/",
           src:logo,
            alt:"mindAr"},
            {href:"https://threejs.org/",
            src:three,
-            alt:"threejs"}
+            alt:"threejs"},
+
+            {href:"https://www.adobe.com/ar/products/photoshop.html",
+            src: sequelize,
+             alt:"sequlize"},    
+                
+             
    ] 
 
 

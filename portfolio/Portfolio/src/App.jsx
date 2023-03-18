@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import MobileNavBar from './MobileNavBar';
@@ -13,6 +13,8 @@ import Typed from 'react-typed';
 import BallCanvas from "../src/Balls.jsx"
 import Starcanvas from './Stars';
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 
 
 
@@ -41,6 +43,50 @@ function App() {
       body: formData
     })
   } 
+
+  const {ref, inView} = useInView({threshold: 0.2});
+  
+  const animation = useAnimation();
+  const anime = useAnimation();
+  const pop = useAnimation()
+
+  useEffect(()=> {
+    if(inView){
+      animation.start({
+        x:0,
+        transition: {type:"spring", duration:1, bounce: 0.2}
+
+      });
+      anime.start({
+        x:0,
+        transition: {type:"spring", duration:1, bounce: 0.2}
+
+      });
+      pop.start({
+        scale:1 ,
+        transition: {type:"spring", duration:1, bounce: 0.2}
+        
+        
+        
+
+      })
+    }
+    if(!inView){
+      animation.start({
+        x:"100vw"
+        
+      });
+      anime.start({
+        x:"-100vw"
+        
+      }),
+      pop.start({
+        scale:0
+        
+      })
+    }
+  }, [inView])
+
 
   return (
     
@@ -112,8 +158,8 @@ function App() {
         
         </section>
       <section className='aboutMe' ref={aboutMe}>
-        <div className='partContainer'>
-        <div className='infoAbout'>
+        <div ref={ref} className='partContainer'>
+        <motion.div animate={anime} className='infoAbout'>
         <h2 className='aboutTitle'>Problem-solver. Team-player.  Creative. </h2>
           <h3 className='text'>
             I am a Full Stack Developer from Cordoba, Argentina. I am also a Psychologyst,
@@ -123,20 +169,20 @@ has allowed me to develop comunicational soft skills, active listening and a
 better understanding of interrelationships inside groups.
 </h3>
             
-        </div>
+        </motion.div>
         <div className='mePhoto'>
           <img className='photo' src={me} alt='not found'></img>
         </div>
   </div>   
-        <div className='technologies'>
+        <motion.div animate={animation} className='technologies'>
         <p className='techTitle'>TECHNOLOGIES</p>
-        <p className='techIcons'> {tech && tech.map((t,i) => (<div className='techIcon'><BallCanvas key={t.name} icon={t.src}/></div>) )}
+        <p className='techIcons'> {tech && tech.map((t,i) => (<div className='techIcon' key={t.name}><BallCanvas key={t.name} icon={t.src}/></div>) )}
   
 </p>
 
    
 
-        </div>
+        </motion.div>
         
     
      
@@ -153,8 +199,8 @@ better understanding of interrelationships inside groups.
       <section className='contact' ref={contact}>
        <Starcanvas></Starcanvas>
         
-        <div className='contactContainer'>
-            <div className='contactRow'>
+        <div  className='contactContainer'>
+            <div  className='contactRow'>
               <div className='contactLeft'>
                   <h1 className='contactTitle'>Every good thing in life starts with a conversation</h1>
                 
