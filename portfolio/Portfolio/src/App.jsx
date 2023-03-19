@@ -8,13 +8,13 @@ import Slider from './Slider';
 import cv from "../public/CV.pdf"
 import Swiper from './swiper';
 import Video from './video';
-import Icons from './Icons';
 import Typed from 'react-typed';
 import BallCanvas from "../src/Balls.jsx"
 import Starcanvas from './Stars';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
+import Contact from './Contact';
 
 
 
@@ -32,17 +32,7 @@ function App() {
     })
   }
 
-  const submitFunction = (e) => {
-    const formEle = document.getElementById("formContact")
-    e.preventDefault();
-    console.log(formEle)
-    console.log("submited")
-    const formData = new FormData(formEle);
-    fetch("https://script.google.com/macros/s/AKfycbzIkF5e146JnPhSWmKzXjr5MMRHhG7Ilq9rLFOasO3wp9XdUNLv8WBcJ80uz87UROZ8/exec", {
-      method: "POST",
-      body: formData
-    })
-  } 
+ 
 
   const {ref, inView} = useInView({threshold: 0.2});
   
@@ -158,6 +148,7 @@ function App() {
         
         </section>
       <section className='aboutMe' ref={aboutMe}>
+      
         <div ref={ref} className='partContainer'>
         <motion.div animate={anime} className='infoAbout'>
         <h2 className='aboutTitle'>Problem-solver. Team-player.  Creative. </h2>
@@ -185,7 +176,7 @@ better understanding of interrelationships inside groups.
         </motion.div>
         
     
-     
+       
       </section>
       <section className="projects"ref={projects}>
       <div className='h3'>
@@ -198,35 +189,7 @@ better understanding of interrelationships inside groups.
      
       <section className='contact' ref={contact}>
        <Starcanvas></Starcanvas>
-        
-        <div  className='contactContainer'>
-            <div  className='contactRow'>
-              <div className='contactLeft'>
-                  <h1 className='contactTitle'>Every good thing in life starts with a conversation</h1>
-                
-                  <Icons></Icons>
-              </div>
-              <div className='contactRight'>
-                <form   id='formContact' onSubmit={(e)=>submitFunction(e)}>
-                  <input type="text" name='Name' placeholder='Your name' required/>
-                  <input type="mail" name='Email' placeholder='your email' required/>
-                  <textarea name='Message'   cols="30" row="6"  placeholder='Your message' required/>
-              <button type='submit'>Submit</button>
-                </form>
-             
-
-              </div>
-              
-              
-              </div>   
-
-
-        </div>
-
-
-
-        
-
+       <Contact></Contact> 
       </section>
       
     </div>

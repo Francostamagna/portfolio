@@ -392,6 +392,7 @@
   display: flex;
   flex-direction: row;
   margin-top: -120px;
+  height: 900px;
 }
 
 
@@ -541,6 +542,7 @@
     width: 100%;
     position: relative;
     z-index: 0;
+    overflow: hidden;
   
    
   }
@@ -821,6 +823,12 @@
       
       
       }
+      #formContact textarea{
+        margin-bottom: 40px;
+        
+      }
+
+
       #formContact button{
         margin-left: 28vw ;
       }
