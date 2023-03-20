@@ -568,6 +568,27 @@
    
    
   }
+  .contactTitleResponsive{
+    display: none;
+     text-align: center;
+    
+    color: rgb(253, 253, 252);
+    
+    
+    background-color: rgb(36, 33, 26);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+    font-family: 'Montserrat', sans-serif;
+  color:#fdfcfd;
+  text-shadow: 0 0 10px #ce539b, 0 0 20px #ce539b,0 0 20px #ce539b, 0 0 50px #2dd8c1;
+  font-size: 4.5vw;
+    width: 100%;
+    
+    margin-bottom:100px;
+    
+  }
+
+
 
   .contactContainer{
     width: 100%;
@@ -818,10 +839,16 @@
        
       }
       .contactTitle {
-       margin-bottom: 0;
+       display: none;
       
       
       
+      }
+
+      .contactTitleResponsive{
+        display: flex;
+        width: 80vw !important;
+        margin-bottom: 30px;
       }
       #formContact textarea{
         margin-bottom: 40px;
@@ -915,7 +942,7 @@
   
 .contactTitle {
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 4.5vw;
  
  
  
@@ -988,7 +1015,7 @@
       
   
     }
-    .contactTitle{
+    .contactTitleResponsive{
       width: 80vw !important;
       font-size: 5.5vw !important;
     }

@@ -4,7 +4,7 @@ import Icons from './Icons'
 import { motion, transform } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-import { useMediaQuery } from './functions';
+
 
 
 export default function Contact() {
@@ -27,12 +27,10 @@ export default function Contact() {
   const popFirst = useAnimation();
   const pop = useAnimation()
   const popLast = useAnimation();
-  const popResponsive = useAnimation();
+  const popFirstResponsive = useAnimation();
 
   
-  let boxVariants = {};
-  let isSmall = useMediaQuery("(min-width: 980px)");
-  console.log(isSmall)
+ 
  
 
 
@@ -42,7 +40,17 @@ export default function Contact() {
    
    
     if(inView){
+      
       popFirst.start({
+        scale:1,
+        x:"0vw",
+        y:"0vw",
+       
+         transition: {type:"spring", delay:2.5, duration:1, bounce: 0.2},
+        
+       });
+      
+      popFirstResponsive.start({
        scale:1,
         transition: {type:"spring", delay:0.5, duration:1, bounce: 0.2},
        
@@ -64,10 +72,21 @@ export default function Contact() {
     }
     if(!inView){
       popFirst.start({
-       scale:0,
+       scale:1.6,
+       x:"20vw",
+       y:"8vw",
+       
       
         
       });
+
+      popFirstResponsive.start({
+        scale:0
+        
+        
+       });
+       
+
       pop.start({
         scale:0
         
@@ -80,7 +99,7 @@ export default function Contact() {
       
     
     }
-  }, [inView, isSmall])
+  }, [inView])
 
 
 
@@ -90,7 +109,7 @@ return (<div ref={ref} className='contactContainer'>
             <div  className='contactRow'>
               <div className='contactLeft'>
                 <motion.h1 animate={popFirst}  className='contactTitle'>Every good thing in life starts with a conversation</motion.h1>
-                
+                <motion.h1 animate={popFirstResponsive}  className='contactTitleResponsive'>Every good thing in life starts with a conversation</motion.h1>
                  <motion.div animate={popLast}><Icons></Icons></motion.div> 
               </div>
               <motion.div animate={pop} className='contactRight'>
