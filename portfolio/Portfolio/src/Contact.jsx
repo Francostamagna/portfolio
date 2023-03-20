@@ -23,17 +23,20 @@ export default function Contact() {
 
       const {ref, inView} = useInView({threshold: 0.2});
   
-  
+     
   const popFirst = useAnimation();
   const pop = useAnimation()
   const popLast = useAnimation();
   const popResponsive = useAnimation();
 
-
+  
   let boxVariants = {};
-  const isSmall = useMediaQuery("(max-width: 980px)");
+  let isSmall = useMediaQuery("(min-width: 980px)");
   console.log(isSmall)
  
+
+
+
 
   useEffect(()=> {
    
@@ -41,33 +44,28 @@ export default function Contact() {
     if(inView){
       popFirst.start({
        scale:1,
-        transition: {type:"spring", delay:2, duration:1, bounce: 0.2},
-        x:0,
-        y:0
+        transition: {type:"spring", delay:0.5, duration:1, bounce: 0.2},
+       
       });
+      
+      ;
       pop.start({
-        scale:1,
-        transition: {type:"spring", delay:2.5, duration:1, bounce: 0.2}
-
-      });
-      popLast.start({
         scale:1,
         transition: {type:"spring", delay:3, duration:1, bounce: 0.2}
 
       });
-
-      popResponsive.start({
+      popLast.start({
         scale:1,
-        transition: {type:"spring", delay:1, duration:1, bounce: 0.2}
+        transition: {type:"spring", delay:3.5, duration:1, bounce: 0.2}
 
       });
+
     
     }
     if(!inView){
       popFirst.start({
-       scale:1.6,
-       x:"20vw",
-       y:"15vh"
+       scale:0,
+      
         
       });
       pop.start({
@@ -79,11 +77,10 @@ export default function Contact() {
         scale:0
       })
 
-      popResponsive.start({
-        scale:0
-      })
+      
+    
     }
-  }, [inView,isSmall])
+  }, [inView, isSmall])
 
 
 
@@ -92,7 +89,7 @@ export default function Contact() {
 return (<div ref={ref} className='contactContainer'>
             <div  className='contactRow'>
               <div className='contactLeft'>
-                  <motion.h1 animate={isSmall? popResponsive:popFirst}  className='contactTitle'>Every good thing in life starts with a conversation</motion.h1>
+                <motion.h1 animate={popFirst}  className='contactTitle'>Every good thing in life starts with a conversation</motion.h1>
                 
                  <motion.div animate={popLast}><Icons></Icons></motion.div> 
               </div>
