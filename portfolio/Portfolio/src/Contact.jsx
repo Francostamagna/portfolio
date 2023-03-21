@@ -9,6 +9,69 @@ import { useAnimation } from 'framer-motion';
 
 export default function Contact() {
  
+  let [input, setInput] =useState({
+    Name: "",
+    Email:"",
+    Message: "",
+    
+  
+   })
+  
+   let [errors, setErrors] = useState({
+    Name:"Name required",
+    Email:  "Must be a valid E-mail",
+    Message: "Message required"
+  
+   })
+
+   let validate = (input) => {
+    const errors = {};
+    if (!input.Name){
+     errors.Name = "Name required"
+    }
+    
+    let pupi = input.Email.toLowerCase().match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)
+    console.log(pupi)
+    if (!pupi
+    ) {
+     errors.Email = "Must be a valid E-mail"
+    }
+    console.log(errors.Email)
+
+
+ 
+     if (input.Message === 0) {
+     errors.Message = "Message required"
+    }
+    
+ 
+    return errors;
+  }
+
+  let submit = true;
+  console.log(errors)
+  if(input.Name && input.Email && input.Message){
+    if (!errors.Name  && !errors.Email && !errors.Message ){
+       submit= false
+ 
+ }}
+
+ let handleChange = (e) => {
+  setInput({
+    ...input,
+    [e.target.name ] : e.target.value
+  })
+  setErrors(validate({
+    ...input,
+    [e.target.name ] : e.target.value
+  }))
+
+}
+
+
+
+
+
     const submitFunction = (e) => {
         const formEle = document.getElementById("formContact")
         e.preventDefault();
@@ -114,10 +177,10 @@ return (<div ref={ref} className='contactContainer'>
               </div>
               <motion.div animate={pop} className='contactRight'>
                 <form   id='formContact' onSubmit={(e)=>submitFunction(e)}>
-                  <input type="text" name='Name' placeholder='Your name' required/>
-                  <input type="mail" name='Email' placeholder='your email' required/>
-                  <textarea name='Message'   cols="30" row="6"  placeholder='Your message' required/>
-              <button type='submit'>Submit</button>
+                  <input type="text" name='Name' placeholder='Your name' value={input.Name}  onChange={(e) => {handleChange(e)}}  required/>
+                  <input type="mail" name='Email' placeholder='your email' value={input.Email}  onChange={(e) => {handleChange(e)}}  required/>
+                  <textarea name='Message'   cols="30" row="6"  placeholder='Your message' value={input.Message}  onChange={(e) => {handleChange(e)}}  required/>
+              <button  disabled={submit} type='submit'>Submit</button>
                 </form>
              
 

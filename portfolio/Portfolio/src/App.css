@@ -663,18 +663,11 @@
     font-size: 25px;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.3s ;
+  
     
   }
 
-  #formContact button:hover{
-    color: #010000;
-   
-    transform: scale(0.95);
-    text-shadow:0 0 15px #e5e4e9 ;
-    box-shadow:0 0 15px #ce539b;
-   
-  }
+  
  
 
 
