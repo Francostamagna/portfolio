@@ -417,7 +417,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 80px;
   justify-content: space-evenly;
 
 }
@@ -735,7 +735,7 @@
 
     .partContainer{
       flex-direction: column;
-      margin-top: -100px;
+      margin-top: 0px;
       justify-content: center;
       align-items: center;
       min-width: 342px;
@@ -755,6 +755,10 @@
     }
     .photo{
       min-width: 342px;
+    }
+
+    .infoAbout{
+      margin-top: 0px;
     }
 
   }
@@ -777,6 +781,16 @@
     #descript{
       margin-top: 20px ;
     }
+    .partContainer{
+    
+      margin-top: 0px;
+  
+     }
+
+     .infoAbout{
+      margin-bottom: -10px;
+    }
+    
     .techIcon{
       height: 80px;
       width: 80px;
@@ -878,11 +892,13 @@
    .technologies{
     width: 95vw;
     margin-top: 200px;
+    justify-content: space-around;
+    height: 500px;
    }
 
    .mePhoto{
     
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 
   .infoAbout{
@@ -897,7 +913,7 @@
   }
 
   .techIcons{
-    margin-top: -150px;
+    margin-top: -200px;
   }
   }
 
@@ -931,6 +947,12 @@
 .freudContainer{
   min-width: 100px;
   
+}
+.technologies{
+  height: 700px;
+}
+.techIcons{
+  margin-top: -280px;
 }
   
 .contactTitle {

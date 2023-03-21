@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import MobileNavBar from './MobileNavBar';
 import me from "./assets/franco.jpg"
-import {tech} from "./assets/tech.js"
+
 import Slider from './Slider';
 import cv from "../public/CV.pdf"
 import Swiper from './swiper';
 import Video from './video';
+import Technologies from './Technologies';
 import Typed from 'react-typed';
-import BallCanvas from "../src/Balls.jsx"
+
 import Starcanvas from './Stars';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -34,7 +35,7 @@ function App() {
 
  
 
-  const {ref, inView} = useInView({threshold: 0.2});
+  const {ref, inView} = useInView({threshold: 0});
   
   const animation = useAnimation();
   const anime = useAnimation();
@@ -165,15 +166,7 @@ better understanding of interrelationships inside groups.
           <img className='photo' src={me} alt='not found'></img>
         </div>
   </div>   
-        <motion.div animate={animation} className='technologies'>
-        <p className='techTitle'>TECHNOLOGIES</p>
-        <p className='techIcons'> {tech && tech.map((t,i) => (<div className='techIcon' key={t.name}><BallCanvas key={t.name} icon={t.src}/></div>) )}
-  
-</p>
-
-   
-
-        </motion.div>
+        <Technologies></Technologies>
         
     
        
