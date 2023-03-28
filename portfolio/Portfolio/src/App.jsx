@@ -154,10 +154,10 @@ function App() {
         <motion.div animate={anime} className='infoAbout'>
         <h2 className='aboutTitle'>Problem-solver. Team-player.  Creative. </h2>
           <h3 className='text'>
-            I am a Full Stack Developer from Cordoba, Argentina. I am also a Psychologyst,
-            started programming in 2022. I love fishing and team sports. Music lover. Empathy.
+            I am a Full Stack Developer from Cordoba, Argentina.
+           I started programming in 2022 and I found my passion. I love fishing, team sports and Music. 
             I am also a Clinical Psychologist, profession that I carry out in the present, it
-has allowed me to develop comunicational soft skills, active listening and a
+has allowed me to develop comunicational soft skills,a great sense of empathy, active listening and a
 better understanding of interrelationships inside groups.
 </h3>
             

@@ -37,6 +37,7 @@ export default () => {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         navigation
         pagination={{ clickable: true }}
+       
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
