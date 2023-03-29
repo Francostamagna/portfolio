@@ -1,7 +1,7 @@
 import {React, useRef, useState} from 'react'
 import "./MobileNavBar.css"
 
-export default function MobileNavBar({about,tech,proj}) {
+export default function MobileNavBar({aboutme,contact,projects}) {
     
     const [burger_class, setBurguerClass ]= useState("burger-bar unclicked");
     const [menu_class, setMenuClass] = useState("menu hidden")
@@ -40,13 +40,13 @@ export default function MobileNavBar({about,tech,proj}) {
         </nav>
         
           <ul className={menu_class}>
-          <li className='button' onClick={()=>scrollToSection(tech)}>
-          <span class="actual-text">&nbsp;HOME&nbsp;</span>
-    <span class="hover-text" aria-hidden="true">&nbsp;HOME&nbsp;</span></li>
-          <li className='button' onClick={()=>scrollToSection(about)} >  <span class="actual-text">&nbsp;ABOUT&nbsp;</span>
+          <li className='button' onClick={()=>scrollToSection(aboutme)}>
+          <span class="actual-text">&nbsp;ABOUT&nbsp;</span>
     <span class="hover-text" aria-hidden="true">&nbsp;ABOUT&nbsp;</span></li>
-          <li className='button' onClick={()=>scrollToSection(proj)}>  <span class="actual-text">&nbsp;PROJECTS&nbsp;</span>
+          <li className='button' onClick={()=>scrollToSection(projects)} >  <span class="actual-text">&nbsp;PROJECTS&nbsp;</span>
     <span class="hover-text" aria-hidden="true">&nbsp;PROJECTS&nbsp;</span></li>
+          <li className='button' onClick={()=>scrollToSection(contact)}>  <span class="actual-text">&nbsp;CONTACT&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;CONTACT&nbsp;</span></li>
 
           </ul>
        

@@ -82,7 +82,7 @@ function App() {
   return (
     
     <div className="main">
-      <MobileNavBar about={aboutMe} contact={contact} proj={projects}  ></MobileNavBar>
+      <MobileNavBar aboutme={aboutMe} contact={contact} projects={projects}  ></MobileNavBar>
       <section className='NavBar'>
        
     
