@@ -7,7 +7,7 @@ import image3 from "./assets/3.png"
 import deploy from "./assets/inverteddeploy.png"
 import repo from "./assets/invertdegit.png"
 import { Swiper, SwiperSlide} from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -34,10 +34,10 @@ export default () => {
    
     return (
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-       
+        autoplay={true}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}

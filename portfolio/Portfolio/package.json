@@ -24,6 +24,8 @@
     "react-intersection-observer": "^9.4.3",
     "react-typed": "^1.2.0",
     "sass": "^1.58.0",
+    "sweetalert2": "^11.7.3",
+    "sweetalert2-react-content": "^5.0.7",
     "swiper": "^9.0.2",
     "three": "^0.150.1",
     "typed.js": "^2.0.14"

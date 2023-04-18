@@ -667,6 +667,33 @@
     
   }
 
+
+  .swal2-popup  {
+    background-color: #f1eded00 !important;
+    border-color: #ce539b !important;
+    box-shadow: 0 0 25px #ce539b ;
+    border-radius: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    color:#faf7fa !important;
+    text-shadow: 0 0 10px #872757, 0 0 20px #8a0f61,0 0 20px #eae7e9, 0 0 50px #f8f9f8;
+    font-size: 2vw;
+    right: 1vw !important;
+  }
+   .swal2-actions button{
+   background-color: #01000000 !important;
+   
+   box-shadow: 0 0 25px #2dd8c1 ;
+   font-family: 'Montserrat', sans-serif !important;
+   color:#faf7fa !important;
+   font-size: 20px !important;
+   font-weight: 600 !important;
+   
+  }
+
+  .swal2-actions button:hover{
+    box-shadow: 0 0 25px #ce539b ;
+  }
+
   
  
 
@@ -724,6 +751,12 @@
   filter: drop-shadow(0 0 23px var(--animation-color));
   
 }
+
+.swal{
+  background-color: #f1eded00;
+}
+
+
 
 
 
@@ -865,6 +898,21 @@
 
       #formContact button{
         margin-left: 28vw ;
+      }
+
+      .swal{
+        background-color: #eee8e800 !important;
+      }
+      
+      .swal2-popup  {
+        background-color: #f6f3f3 !important;
+        border-color: #ce539b !important;
+        box-shadow: 0 0 25px #ce539b ;
+        font-family: 'Montserrat', sans-serif !important;
+        color:#0e010e !important;
+        text-shadow: 0 0 10px #ebe5e5, 0 0 20px #e7dfe4,0 0 20px #eae7e9, 0 0 50px #f8f9f8;
+        font-size: 2vw;
+
       }
     
     }

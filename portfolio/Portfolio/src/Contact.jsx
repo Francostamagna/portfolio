@@ -4,7 +4,8 @@ import Icons from './Icons'
 import { motion, transform } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
 export default function Contact() {
@@ -70,7 +71,7 @@ export default function Contact() {
 
 
 
-
+const MySwal = withReactContent(Swal)
 
     const submitFunction = (e) => {
         const formEle = document.getElementById("formContact")
@@ -82,6 +83,16 @@ export default function Contact() {
           method: "POST",
           body: formData
         })
+        setInput({
+          Name: "",
+          Email:"",
+          Message: ""
+        })
+        MySwal.fire({
+          title: <p className='swal'>Thanks for getting in touch! I will reply as soon as posible.</p>,
+          position: 'top-end',
+          })
+
       } 
 
       const {ref, inView} = useInView({threshold: 0.2});
