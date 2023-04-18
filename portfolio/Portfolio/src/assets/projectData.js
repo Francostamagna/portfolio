@@ -134,6 +134,7 @@ export const data = [
            {id:3,
                image:image23, name:"zoa"} ],
      info:" Augmented Reality FaceApp developed to generate proximity between the product and the buyer. In this App, the potential buyers can try the product (head accesories) before buying it.",
+     deploy: "https://coronas-zoa.netlify.app/",
      repo: "https://github.com/Francostamagna/ZoaAr",
      repoClass: "deployIconGitzoa",
      tech: [{href:"https://www.w3.org/html/",

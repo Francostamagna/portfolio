@@ -77,6 +77,17 @@ display: flex;
    
 }
 
+.deployRepoZoa{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin-top: -40px;
+    padding-right: 60px;
+    z-index: 100;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+
 .deployIcondown{
     margin-top: 50px;
 }
@@ -102,8 +113,9 @@ display: flex;
 .deployIconGitzoa{
     height: 60px;
     width: 60px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: -1vw;
+    
 }
 
 .logos a img{
@@ -336,8 +348,13 @@ bottom: -5px;
         }
         .deployIconGitzoa{
             margin-left: 2vw ;
-            margin-top: 100px;
+            margin-top: 0px;
 }
+
+            .deployRepoZoa{
+                
+                align-items: center;
+            }
 }
 @media (max-width: 859px){
    .detailContainer{flex-direction:column;
@@ -361,9 +378,18 @@ bottom: -5px;
      
  }
 
+.deployRepoZoa{
+    
+    margin-top: 20px;
+    width: 60vw;
+    justify-content:space-evenly;
+    
+     
+ }
+
  .deployIconGitzoa{
     margin-left: 60px ;
-    margin-top: 20px;
+    margin-top: 0px;
  }
  .hache1{
     font-size: 8vw;
@@ -490,7 +516,7 @@ bottom: -5px;
     }
     .deployIconGitzoa{
         margin-left: 60px ;
-        margin-top: 30px;
+        margin-top: 0px;
 
     }
     .cardzoa--activezoa{
