@@ -755,6 +755,16 @@
 .swal{
   background-color: #f1eded00;
 }
+.swal2-actions button{
+  background-color: #01000000 !important;
+  
+  box-shadow: 0 0 25px #2dd8c1 ;
+  font-family: 'Montserrat', sans-serif !important;
+  color:#faf7fa !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  
+ }
 
 
 
@@ -914,6 +924,28 @@
         font-size: 2vw;
 
       }
+      .swal2-actions button{
+   background-color: #01000000 !important;
+   
+   box-shadow: 0 0 0px #d7c9d678 ;
+   font-family: 'Montserrat', sans-serif !important;
+   color:#c95993 !important;
+   font-size: 20px !important;
+   font-weight: 600 !important;
+   
+  }
+
+  .swal2-actions button:hover{
+    background-color: #01000000 !important;
+    
+    box-shadow: 0 0 0px #d7c9d678 ;
+    font-family: 'Montserrat', sans-serif !important;
+    color:#c95993 !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    
+   }
+
     
     }
   
