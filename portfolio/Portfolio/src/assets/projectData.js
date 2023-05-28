@@ -13,6 +13,7 @@ import image33 from "../assets/micole3.png"
 import logo from "../assets/logo.png"
 import three from "../assets/Threejs-logo.svg"
 import mercado from "../assets/mercado.png"
+import aws from "../techIcons/aws.png"
 
 export const data = [
   {
@@ -70,7 +71,7 @@ export const data = [
           src:"https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
            alt:"tailwind"},
          {href:"https://trello.com",
-          src:"https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-plain-wordmark.svg",
+          src:aws,
            alt:"trello"},
            {href:"https://https://www.mercadopago.com.ar/home",
            src: mercado,

@@ -282,6 +282,7 @@ bottom: -5px;
 }
 .hache2{font-size: 7vw;}
 .hache3{font-size: 7vw;}
+.hache4{font-size: 7vw}
 
 
 
@@ -417,6 +418,10 @@ bottom: -5px;
     font-size: 8vw;
  }
 
+ .hache4{
+    font-size: 8vw;
+ }
+
  .swiper-button-prev{
    
     color: rgb(253, 252, 251) !important;
@@ -470,6 +475,9 @@ bottom: -5px;
      }
      
      .hache1{
+        font-size: 11vw;
+     }
+     .hache4{
         font-size: 11vw;
      }
      

@@ -16,6 +16,7 @@ import sequelize from "../techIcons/sequelize.png"
 import trello from "../techIcons/trello.png"
 import firebase from "../techIcons/firebase.png"
 import photo from "../techIcons/photo.png"
+import aws from "../techIcons/aws.png"
 
 export const tech = [{href:"https://www.w3.org/html/",
 src: html,
@@ -50,9 +51,8 @@ src: html,
      src:tailwind,
       alt:"tailwind"},
     
-      {href:"https://https://www.mercadopago.com.ar/home",
-      src: mercado,
-       alt:"mercado"}, 
+      
+
 
        {href:"https://firebase.google.com/",
        src: firebase,
@@ -67,7 +67,13 @@ src: html,
 
             {href:"https://www.adobe.com/ar/products/photoshop.html",
             src: sequelize,
-             alt:"sequlize"},    
+             alt:"sequlize"}, 
+             
+             {href:"https://aws.amazon.com/es/",
+             src: aws,
+              alt:"aws"}, 
+
+             
                 
              
    ] 
