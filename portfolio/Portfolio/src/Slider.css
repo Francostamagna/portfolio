@@ -24,22 +24,19 @@
     
 }
 
-
 .hache1{
-text-align:center;
-font-size: 100px;
-font-family: 'Permanent Marker', cursive;
-border-bottom: 1px solid #ffff;
-text-shadow: 0 0 40px  #2dd8c1;
-letter-spacing: 0.5vw;
-height: 180px;
-align-items: center;
-justify-content: center;
-display: flex;
-margin-top: -10px;
+    text-align: center;
+    font-size: 100px;
+    
+    color: rgb(254, 254, 253);
+    border-bottom: 1px solid #ffff;
+    height: 160px;
+    text-shadow: 0 0 40px  #2dd8c1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
 
-
-color: rgb(254, 254, 253);}
 .hache2{
 text-align: center;
 font-size: 100px;
@@ -64,6 +61,23 @@ align-items: center;
 justify-content: center;
 display: flex;
 }
+.hache4{
+    text-align:center;
+    font-size: 100px;
+    font-family: 'Permanent Marker', cursive;
+    border-bottom: 1px solid #ffff;
+    text-shadow: 0 0 40px  #2dd8c1;
+    letter-spacing: 0.5vw;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -10px;
+    
+    
+    color: rgb(254, 254, 253);}
+
+
 
 .deployRepo{
    display: flex;

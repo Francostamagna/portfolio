@@ -50,7 +50,7 @@ export default () => {
             <h4 className='info'>{item.info}</h4>
             <div className={item.repoClass==="deployIconGitzoa"? 'deployRepoZoa' : "deployRepo"} >
               {item.deploy? <a className='deployIcon' key={item.deploy} href={item.deploy? item.deploy: null} target="_blank" rel="noreferrer"> <img src={deploy} classname="deployGit" alt="deploy" width="150" height="150"/> </a>: null   }
-              {item.deploy? <a  className={item.repoClass} key={item.repo} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" width="60" height="60" /> </a> : <a   key={i} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" className={item.repoClass} /> </a> }
+              {item.repo? <a  className={item.repoClass} key={item.repo} href={item.repo} target="_blank" rel="noreferrer"> <img src={repo} alt="repo" width="60" height="60" /> </a> : null }
                 
                    </div>
             <div className='logos'>{item.tech && item.tech.map((tech,i) =>(
