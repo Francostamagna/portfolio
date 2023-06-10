@@ -5,7 +5,7 @@ import MobileNavBar from './MobileNavBar';
 import me from "./assets/franco.jpg"
 
 import Slider from './Slider';
-import cv from "../public/CV.pdf"
+import cv from "../public/FRANCO COSTAMAGNA - CV.pdf"
 import Swiper from './swiper';
 import Video from './video';
 import Technologies from './Technologies';
